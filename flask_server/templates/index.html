@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Lights controller</title>
+    </head>
+    <body>
+        <h1>Light threshold controller</h1>
+        Current Value: <span id="currentValue">{{current_value}}</span><br>
+        <form action="/set-threshold" method="GET">
+            On Threshold: <input type="number" name="onThreshold" value="{{on_threshold}}"><br>
+            Off Threshold: <input type="number" name="offThreshold" value="{{off_threshold}}"><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
